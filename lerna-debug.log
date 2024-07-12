@@ -1,0 +1,10 @@
+0 silly argv { _: [ 'create' ], lernaVersion: '8.1.6', '$0': 'lerna', name: 'hook' }
+1 notice cli v8.1.6
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath /Users/peco/Documents/Peco/TestProjects/heitu_package
+4 error Error: Command failed with exit code 1: git config --get user.email
+4 error     at makeError (/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/execa/lib/error.js:59:11)
+4 error     at module.exports.sync (/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/execa/index.js:186:17)
+4 error     at execSync (/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@lerna/create/dist/command.js:1505:31)
+4 error     at CreateCommand.gitConfig (/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@lerna/create/dist/command.js:5481:16)
+4 error     at CreateCommand.initialize (/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@lerna/create/dist/command.js:5415:51)
