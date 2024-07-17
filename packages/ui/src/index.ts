@@ -1,1 +1,1 @@
-export { default as TreeSelect } from './TreeSelect';
+export { default as TestCom } from './TestCom';

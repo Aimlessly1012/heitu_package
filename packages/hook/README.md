@@ -1,1 +1,1 @@
-# @heitu_package/hook 通用 hook
+# hook 工具包

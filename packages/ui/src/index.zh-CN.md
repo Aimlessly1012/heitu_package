@@ -3,8 +3,8 @@ title: 快速开始
 order: 1
 nav:
   order: 2
-  title: 通用组件
-  path: /pro
+  title: ui
+  path: /ui
 group:
   path: /
 ---
