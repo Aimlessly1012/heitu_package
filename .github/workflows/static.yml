@@ -1,52 +1,37 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# 项目名
+name: heitu_package
 
+# 只有在master分支发生push事件时触发
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches:
+      - master
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
+# 工作流
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest # 运行环境
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      # 拉代码
+      - name: Checkout code
+        uses: actions/checkout@v1
+
+      # 下载node，我这里指定了15.x，这个版本可随意，高于dumi规定的node版本即可
+      - name: Use Node.js
+        uses: actions/setup-node@v1
         with:
-          node-version: 16
-          cache: 'npm'
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run docs:build
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+          node-version: 16.x
+
+      # 打包代码
+      - name: Build Project
+        run: |
+          npm install
+          npm run build
+
+      # 部署到github
+      - name: Deploy to Github
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          # Upload dist repository
-          path: './docs-dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          branch: build # 打包的内容放到build分支下
+          folder: dist

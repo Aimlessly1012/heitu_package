@@ -16,4 +16,14 @@ export default defineConfig({
   resolve: {
     includes: ['docs', 'packages/hook/src', 'packages/ui/src'],
   },
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd', //配置antd全局样式
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
 });
