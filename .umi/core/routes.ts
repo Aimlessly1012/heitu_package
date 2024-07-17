@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { ApplyPluginsType } from '/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/umi/node_modules/@umijs/runtime';
 import * as umiExports from './umiExports';
 import { plugin } from './plugin';
 
@@ -58,47 +58,12 @@ export function getRoutes() {
     "wrappers": [require('../dumi/layout').default, require('/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/dumi-theme-default/es/layout.js').default],
     "routes": [
       {
-        "path": "/",
-        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/index.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "docs/index.md",
-          "updatedTime": 1721182508000,
-          "hero": {
-            "title": "前端公共资源",
-            "desc": "<div class=\"markdown\"><p>高效、稳定、便捷</p></div>",
-            "actions": [
-              {
-                "text": "快速上手",
-                "link": "/pro/table"
-              }
-            ]
-          },
-          "features": [
-            {
-              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png",
-              "title": "@heitu_package/ui",
-              "desc": "<div class=\"markdown\"><p>业务沉淀通用组件，涉及部分视觉规范或业务逻辑</p></div>"
-            },
-            {
-              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png",
-              "title": "@heitu_package/hook",
-              "desc": "<div class=\"markdown\"><p>通用hooks，无业务逻辑</p></div>"
-            }
-          ],
-          "footer": "<div class=\"markdown\"><p>Powered by Peco</p></div>",
-          "slugs": [],
-          "title": "Index"
-        },
-        "title": "Index - heitu_package"
-      },
-      {
         "path": "/zh-CN/hook/",
         "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/packages/hook/src/index.zh-CN.md').default,
         "exact": true,
         "meta": {
           "filePath": "packages/hook/src/index.zh-CN.md",
-          "updatedTime": 1721182508000,
+          "updatedTime": 1721199932639,
           "title": "快速开始",
           "order": 1,
           "nav": {
@@ -127,7 +92,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "packages/hook/src/useTest/index.zh-CN.md",
-          "updatedTime": 1721182508000,
+          "updatedTime": 1721199929842,
           "title": "useTest",
           "order": 1,
           "nav": {
@@ -151,67 +116,22 @@ export function getRoutes() {
         "title": "useTest - heitu_package"
       },
       {
-        "path": "/zh-CN/hook/use-update-effect",
-        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/packages/hook/src/useUpdateEffect/index.zh-CN.md').default,
-        "exact": true,
-        "meta": {
-          "filePath": "packages/hook/src/useUpdateEffect/index.zh-CN.md",
-          "updatedTime": 1721182508000,
-          "title": "useUpdateEffect",
-          "order": 1,
-          "nav": {
-            "order": 2,
-            "title": "Hook",
-            "path": "/zh-CN/hook"
-          },
-          "group": {
-            "path": "/zh-CN/hook/",
-            "title": "Hook"
-          },
-          "slugs": [
-            {
-              "depth": 1,
-              "value": "useUpdateEffect",
-              "heading": "useupdateeffect"
-            },
-            {
-              "depth": 2,
-              "value": "描述",
-              "heading": "描述"
-            },
-            {
-              "depth": 2,
-              "value": "代码演示",
-              "heading": "代码演示"
-            },
-            {
-              "depth": 3,
-              "value": "API",
-              "heading": "api"
-            }
-          ],
-          "hasPreviewer": true,
-          "locale": "zh-CN"
-        },
-        "title": "useUpdateEffect - heitu_package"
-      },
-      {
-        "path": "/zh-CN/pro/",
+        "path": "/zh-CN/ui/",
         "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/packages/ui/src/index.zh-CN.md').default,
         "exact": true,
         "meta": {
           "filePath": "packages/ui/src/index.zh-CN.md",
-          "updatedTime": 1721182508000,
+          "updatedTime": 1721199747222,
           "title": "快速开始",
           "order": 1,
           "nav": {
             "order": 2,
-            "title": "通用组件",
-            "path": "/zh-CN/pro"
+            "title": "ui",
+            "path": "/zh-CN/ui"
           },
           "group": {
-            "path": "/zh-CN/pro/",
-            "title": "通用组件"
+            "path": "/zh-CN/ui/",
+            "title": "ui"
           },
           "slugs": [
             {
@@ -225,34 +145,178 @@ export function getRoutes() {
         "title": "快速开始 - heitu_package"
       },
       {
-        "path": "/zh-CN/pro/tree-select",
-        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/packages/ui/src/TreeSelect/index.zh-CN.md').default,
+        "path": "/zh-CN/ui/test-com",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/packages/ui/src/TestCom/index.zh-CN.md').default,
         "exact": true,
         "meta": {
-          "filePath": "packages/ui/src/TreeSelect/index.zh-CN.md",
-          "updatedTime": 1721182508000,
-          "componentName": "TreeSelect",
-          "title": "TreeSelect - 高级树结构选择",
+          "filePath": "packages/ui/src/TestCom/index.zh-CN.md",
+          "updatedTime": 1721199850762,
+          "componentName": "TestCom",
+          "title": "Text - 测试组件",
           "order": 2,
           "nav": {
             "order": 1,
             "title": "通用组件",
-            "path": "/zh-CN/pro"
+            "path": "/zh-CN/ui"
           },
           "group": {
-            "path": "/zh-CN/pro/",
+            "path": "/zh-CN/ui/",
             "title": "通用组件"
           },
           "slugs": [
             {
               "depth": 3,
-              "value": "中文文档 TreeSelect",
-              "heading": "中文文档-treeselect"
+              "value": "中文文档 Text",
+              "heading": "中文文档-text"
             }
           ],
           "locale": "zh-CN"
         },
-        "title": "TreeSelect - 高级树结构选择 - heitu_package"
+        "title": "Text - 测试组件 - heitu_package"
+      },
+      {
+        "path": "/guide",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/guide.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/guide.md",
+          "updatedTime": 1721201797344,
+          "slugs": [],
+          "nav": {
+            "path": "/guide",
+            "title": "Guide"
+          },
+          "title": "Guide"
+        },
+        "title": "Guide - heitu_package"
+      },
+      {
+        "path": "/",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/index.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/index.md",
+          "updatedTime": 1721200620824,
+          "hero": {
+            "title": "Heitu_package",
+            "desc": "<div class=\"markdown\"><p>heitu_package site example</p></div>",
+            "actions": [
+              {
+                "text": "Getting Started",
+                "link": "/hook"
+              }
+            ]
+          },
+          "features": [
+            {
+              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png",
+              "title": "heitu_package/hook",
+              "desc": "<div class=\"markdown\"><p>react 自定义hook</p></div>"
+            },
+            {
+              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png",
+              "title": "heitu_package/ui",
+              "desc": "<div class=\"markdown\"><p>高效组件</p></div>"
+            }
+          ],
+          "footer": "<div class=\"markdown\"><p>Powered by Peco</p></div>",
+          "slugs": [],
+          "title": "Index"
+        },
+        "title": "Index - heitu_package"
+      },
+      {
+        "path": "/hook/use-test",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/hook/useTest.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/hook/useTest.md",
+          "updatedTime": 1721202349492,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "useTest",
+              "heading": "usetest"
+            },
+            {
+              "depth": 2,
+              "value": "描述",
+              "heading": "描述"
+            },
+            {
+              "depth": 2,
+              "value": "Demo",
+              "heading": "demo"
+            },
+            {
+              "depth": 2,
+              "value": "Api",
+              "heading": "api"
+            }
+          ],
+          "title": "useTest",
+          "hasPreviewer": true,
+          "nav": {
+            "path": "/hook",
+            "title": "Hook"
+          }
+        },
+        "title": "useTest - heitu_package"
+      },
+      {
+        "path": "/ui/test-com",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/ui/TestCom.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/ui/TestCom.md",
+          "updatedTime": 1721202313733,
+          "slugs": [
+            {
+              "depth": 1,
+              "value": "TestCom",
+              "heading": "testcom"
+            },
+            {
+              "depth": 2,
+              "value": "描述",
+              "heading": "描述"
+            },
+            {
+              "depth": 2,
+              "value": "Demo",
+              "heading": "demo"
+            },
+            {
+              "depth": 2,
+              "value": "Api",
+              "heading": "api"
+            }
+          ],
+          "title": "TestCom",
+          "hasPreviewer": true,
+          "nav": {
+            "path": "/ui",
+            "title": "Ui"
+          }
+        },
+        "title": "TestCom - heitu_package"
+      },
+      {
+        "path": "/zh-CN/guide",
+        "component": require('/Users/peco/Documents/Peco/TestProjects/heitu_package/docs/guide.md').default,
+        "exact": true,
+        "meta": {
+          "filePath": "docs/guide.md",
+          "updatedTime": 1721201797344,
+          "slugs": [],
+          "nav": {
+            "path": "/zh-CN/guide",
+            "title": "Guide"
+          },
+          "title": "Guide",
+          "locale": "zh-CN"
+        },
+        "title": "Guide - heitu_package"
       },
       {
         "path": "/zh-CN",
@@ -260,27 +324,27 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1721182508000,
+          "updatedTime": 1721200620824,
           "hero": {
-            "title": "前端公共资源",
-            "desc": "<div class=\"markdown\"><p>高效、稳定、便捷</p></div>",
+            "title": "Heitu_package",
+            "desc": "<div class=\"markdown\"><p>heitu_package site example</p></div>",
             "actions": [
               {
-                "text": "快速上手",
-                "link": "/pro/table"
+                "text": "Getting Started",
+                "link": "/hook"
               }
             ]
           },
           "features": [
             {
-              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png",
-              "title": "@heitu_package/ui",
-              "desc": "<div class=\"markdown\"><p>业务沉淀通用组件，涉及部分视觉规范或业务逻辑</p></div>"
+              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png",
+              "title": "heitu_package/hook",
+              "desc": "<div class=\"markdown\"><p>react 自定义hook</p></div>"
             },
             {
-              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png",
-              "title": "@heitu_package/hook",
-              "desc": "<div class=\"markdown\"><p>通用hooks，无业务逻辑</p></div>"
+              "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png",
+              "title": "heitu_package/ui",
+              "desc": "<div class=\"markdown\"><p>高效组件</p></div>"
             }
           ],
           "footer": "<div class=\"markdown\"><p>Powered by Peco</p></div>",
@@ -299,12 +363,24 @@ export function getRoutes() {
         "redirect": "/zh-CN/hook/"
       },
       {
-        "path": "/zh-CN/pro",
+        "path": "/zh-CN/ui",
         "meta": {
           "order": 2
         },
         "exact": true,
-        "redirect": "/zh-CN/pro/"
+        "redirect": "/zh-CN/ui/"
+      },
+      {
+        "path": "/hook",
+        "meta": {},
+        "exact": true,
+        "redirect": "/hook/use-test"
+      },
+      {
+        "path": "/ui",
+        "meta": {},
+        "exact": true,
+        "redirect": "/ui/test-com"
       }
     ],
     "title": "heitu_package",

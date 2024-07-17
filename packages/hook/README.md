@@ -1,11 +1,1 @@
-# `hook`
-
-> TODO: description
-
-## Usage
-
-```
-const hook = require('hook');
-
-// TODO: DEMONSTRATE API
-```
+# hook 工具包

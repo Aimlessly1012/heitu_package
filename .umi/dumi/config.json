@@ -1,14 +1,5 @@
 {
   "menus": {
-    "en-US": {
-      "*": [
-        {
-          "path": "/",
-          "title": "Index",
-          "meta": {}
-        }
-      ]
-    },
     "zh-CN": {
       "/zh-CN/hook": [
         {
@@ -29,33 +20,26 @@
               "meta": {
                 "order": 1
               }
-            },
-            {
-              "path": "/zh-CN/hook/use-update-effect",
-              "title": "useUpdateEffect",
-              "meta": {
-                "order": 1
-              }
             }
           ]
         }
       ],
-      "/zh-CN/pro": [
+      "/zh-CN/ui": [
         {
           "title": "通用组件",
-          "path": "/zh-CN/pro/",
+          "path": "/zh-CN/ui/",
           "meta": {},
           "children": [
             {
-              "path": "/zh-CN/pro/",
+              "path": "/zh-CN/ui/",
               "title": "快速开始",
               "meta": {
                 "order": 1
               }
             },
             {
-              "path": "/zh-CN/pro/tree-select",
-              "title": "TreeSelect - 高级树结构选择",
+              "path": "/zh-CN/ui/test-com",
+              "title": "Text - 测试组件",
               "meta": {
                 "order": 2
               }
@@ -63,10 +47,47 @@
           ]
         }
       ],
+      "/zh-CN/guide": [
+        {
+          "path": "/zh-CN/guide",
+          "title": "Guide",
+          "meta": {}
+        }
+      ],
       "*": [
         {
           "path": "/zh-CN",
           "title": "Index",
+          "meta": {}
+        }
+      ]
+    },
+    "en-US": {
+      "/guide": [
+        {
+          "path": "/guide",
+          "title": "Guide",
+          "meta": {}
+        }
+      ],
+      "*": [
+        {
+          "path": "/",
+          "title": "Index",
+          "meta": {}
+        }
+      ],
+      "/hook": [
+        {
+          "path": "/hook/use-test",
+          "title": "useTest",
+          "meta": {}
+        }
+      ],
+      "/ui": [
+        {
+          "path": "/ui/test-com",
+          "title": "TestCom",
           "meta": {}
         }
       ]
@@ -87,12 +108,30 @@
       {
         "order": 1,
         "title": "通用组件",
-        "path": "/zh-CN/pro"
+        "path": "/zh-CN/ui"
       },
       {
         "order": 2,
         "title": "Hook",
         "path": "/zh-CN/hook"
+      },
+      {
+        "path": "/zh-CN/guide",
+        "title": "Guide"
+      }
+    ],
+    "en-US": [
+      {
+        "path": "/ui",
+        "title": "Ui"
+      },
+      {
+        "path": "/hook",
+        "title": "Hook"
+      },
+      {
+        "path": "/guide",
+        "title": "Guide"
       }
     ]
   },

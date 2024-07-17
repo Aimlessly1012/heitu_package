@@ -4,7 +4,7 @@ import '@@/core/devScripts';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@umijs/runtime';
+import { ApplyPluginsType } from '/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/umi/node_modules/@umijs/runtime';
 import { renderClient } from '/Users/peco/Documents/Peco/TestProjects/heitu_package/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 

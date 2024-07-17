@@ -1,27 +1,21 @@
 {
   "name": "@heitu_package/ui",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "Aimlessly1012 <444769150@qq.com>",
-  "homepage": "",
+  "homepage": "https://github.com/Aimlessly1012/heitu_package#readme",
   "license": "ISC",
-  "main": "lib/ui.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "father-build"
   },
-  "files": [
-    "lib"
-  ],
   "publishConfig": {
-    "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "scripts": {
-    "test": "node ./__tests__/ui.test.js"
-  },
-  "dependencies": {
-    "typescript": "^5.5.3"
-  },
-  "gitHead": "929cd0694d418f7c67d05672a09903fb5147ce3b"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aimlessly1012/heitu_package.git"
+  }
 }
