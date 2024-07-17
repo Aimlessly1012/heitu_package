@@ -1,0 +1,107 @@
+{
+  "menus": {
+    "en-US": {
+      "*": [
+        {
+          "path": "/",
+          "title": "Index",
+          "meta": {}
+        }
+      ]
+    },
+    "zh-CN": {
+      "/zh-CN/hook": [
+        {
+          "title": "Hook",
+          "path": "/zh-CN/hook/",
+          "meta": {},
+          "children": [
+            {
+              "path": "/zh-CN/hook/",
+              "title": "快速开始",
+              "meta": {
+                "order": 1
+              }
+            },
+            {
+              "path": "/zh-CN/hook/use-test",
+              "title": "useTest",
+              "meta": {
+                "order": 1
+              }
+            },
+            {
+              "path": "/zh-CN/hook/use-update-effect",
+              "title": "useUpdateEffect",
+              "meta": {
+                "order": 1
+              }
+            }
+          ]
+        }
+      ],
+      "/zh-CN/pro": [
+        {
+          "title": "通用组件",
+          "path": "/zh-CN/pro/",
+          "meta": {},
+          "children": [
+            {
+              "path": "/zh-CN/pro/",
+              "title": "快速开始",
+              "meta": {
+                "order": 1
+              }
+            },
+            {
+              "path": "/zh-CN/pro/tree-select",
+              "title": "TreeSelect - 高级树结构选择",
+              "meta": {
+                "order": 2
+              }
+            }
+          ]
+        }
+      ],
+      "*": [
+        {
+          "path": "/zh-CN",
+          "title": "Index",
+          "meta": {}
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    },
+    {
+      "name": "zh-CN",
+      "label": "中文"
+    }
+  ],
+  "navs": {
+    "zh-CN": [
+      {
+        "order": 1,
+        "title": "通用组件",
+        "path": "/zh-CN/pro"
+      },
+      {
+        "order": 2,
+        "title": "Hook",
+        "path": "/zh-CN/hook"
+      }
+    ]
+  },
+  "title": "heitu_package",
+  "logo": "https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png",
+  "mode": "site",
+  "repository": {
+    "url": "",
+    "branch": "master"
+  },
+  "theme": {}
+}
