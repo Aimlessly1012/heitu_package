@@ -1,11 +1,1 @@
-# `hook`
-
-> TODO: description
-
-## Usage
-
-```
-const hook = require('hook');
-
-// TODO: DEMONSTRATE API
-```
+# @heitu_package/hook 通用 hook

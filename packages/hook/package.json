@@ -1,27 +1,32 @@
 {
   "name": "@heitu_package/hook",
-  "version": "1.0.2",
-  "description": "> TODO: description",
-  "author": "Aimlessly1012 <444769150@qq.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/hook.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
-  },
+  "version": "0.0.1",
+  "description": "通用hook",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
-    "test": "node ./__tests__/hook.test.js"
+    "build": "father-build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "ppfish": "^1.7.6",
+    "react": "^16.x"
+  },
+  "author": "ys-fontend",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.13.15"
   },
   "dependencies": {
-    "typescript": "^5.5.3"
-  },
-  "gitHead": "929cd0694d418f7c67d05672a09903fb5147ce3b"
+    "@babel/runtime-corejs3": "^7.14.0"
+  }
 }
