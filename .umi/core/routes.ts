@@ -63,7 +63,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "packages/hook/src/index.zh-CN.md",
-          "updatedTime": 1721199932639,
+          "updatedTime": 1721182508000,
           "title": "快速开始",
           "order": 1,
           "nav": {
@@ -92,7 +92,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "packages/hook/src/useTest/index.zh-CN.md",
-          "updatedTime": 1721199929842,
+          "updatedTime": 1721182508000,
           "title": "useTest",
           "order": 1,
           "nav": {
@@ -121,7 +121,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "packages/ui/src/index.zh-CN.md",
-          "updatedTime": 1721199747222,
+          "updatedTime": 1721202459000,
           "title": "快速开始",
           "order": 1,
           "nav": {
@@ -150,7 +150,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "packages/ui/src/TestCom/index.zh-CN.md",
-          "updatedTime": 1721199850762,
+          "updatedTime": 1721202459000,
           "componentName": "TestCom",
           "title": "Text - 测试组件",
           "order": 2,
@@ -180,7 +180,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/guide.md",
-          "updatedTime": 1721201797344,
+          "updatedTime": 1721202459000,
           "slugs": [],
           "nav": {
             "path": "/guide",
@@ -196,7 +196,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1721200620824,
+          "updatedTime": 1721202459000,
           "hero": {
             "title": "Heitu_package",
             "desc": "<div class=\"markdown\"><p>heitu_package site example</p></div>",
@@ -231,7 +231,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/hook/useTest.md",
-          "updatedTime": 1721202349492,
+          "updatedTime": 1721202459000,
           "slugs": [
             {
               "depth": 1,
@@ -269,7 +269,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/ui/TestCom.md",
-          "updatedTime": 1721202313733,
+          "updatedTime": 1721202459000,
           "slugs": [
             {
               "depth": 1,
@@ -307,7 +307,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/guide.md",
-          "updatedTime": 1721201797344,
+          "updatedTime": 1721202459000,
           "slugs": [],
           "nav": {
             "path": "/zh-CN/guide",
@@ -324,7 +324,7 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
-          "updatedTime": 1721200620824,
+          "updatedTime": 1721202459000,
           "hero": {
             "title": "Heitu_package",
             "desc": "<div class=\"markdown\"><p>heitu_package site example</p></div>",

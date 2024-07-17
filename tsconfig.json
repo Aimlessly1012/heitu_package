@@ -3,11 +3,18 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
+    "importHelpers": true,
     "esModuleInterop": true,
-    "types": ["jest"],
-    "strict": true,
-    "skipLibCheck": true,
-    "declaration": true
-  }
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": ["src/.umi/*"],
+      "@packages": ["packages/*"]
+    }
+  },
+  "include": ["./typings.d.ts", "packages/**/*.tsx", "packages/**/*.ts"],
+  "exclude": ["node_modules", "lib", "es", "dist", "typings"]
 }
